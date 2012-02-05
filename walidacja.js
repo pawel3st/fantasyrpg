@@ -21,6 +21,7 @@ function klasyPostaci(selObj) {
     }
     
 }
+
 function odblokuj() {
    
     document.getElementById(metry_radio).innerHTML();
