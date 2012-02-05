@@ -7,15 +7,15 @@
         <script type="text/javascript" src="walidacja.js"></script>
     </head>
     <body>
-        <form>
+        <form id="form">
         <table>
 		<tr><td>
 			Nazwa:<br />
-                        <input type="text" name="nazwa" onchange="nazwaCzaru(this)" />
+                        <input type="text" name="nazwa" onChange="nazwaCzaru(this)" id="nazwa_czaru" />
 		</td></tr>
 		<tr><td>
 			Szkoła:<br />
-			<select name="szkola">
+                        <select name="szkola" onfocus="nazwaCzaru(getElementById('nazwa_czaru'))">
 				<option>Iluzje</option>
 				<option>Nekromancja</option>
 				<option>Oczarowanie</option>
@@ -119,20 +119,21 @@
 			Czas rzucania:<br />
 			<input type="text" name="czas_rzucania" value="1 akcja"/>
 		</td></tr>
+                
 		<tr><td>
 			Zasięg:<br />
-			<input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" />Osobisty<br />
-			<input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" />Dotykowy<br />
-			<input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" />Bliski<br />
-			<input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" checked="checked" />Średni<br />
-			<input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" />Daleki<br />
-			<input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" />Nieskończony<br />
-                        <input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" />Brak<br />
-                        <input type="radio" name="zasieg" value="wartość" onclick="odblokuj()" id="metry_radio"/>W metrach
+			<input type="radio" name="zasieg" value="osobisty" onclick="blokuj();" />Osobisty<br />
+			<input type="radio" name="zasieg" value="dotykowy" onclick="blokuj();" />Dotykowy<br />
+			<input type="radio" name="zasieg" value="bliski" onclick="blokuj();" />Bliski<br />
+			<input type="radio" name="zasieg" value="sredni" onclick="blokuj();" checked="checked" />Średni<br />
+			<input type="radio" name="zasieg" value="daleki" onclick="blokuj();" />Daleki<br />
+			<input type="radio" name="zasieg" value="nieskonczony" onclick="blokuj();" />Nieskończony<br />
+                        <input type="radio" name="zasieg" value="brak" onclick="blokuj();" />Brak<br />
+                        <input type="radio" name="zasieg" value="w_metrach" onclick="odblokuj();" />W metrach
                         
 		<tr><td>
 			Zasięg w metrach:<br />
-			<input type="text" name="zasieg_metry" id="metry_input" />
+			<input type="text" name="zasieg_metry" id="zasieg_m" disabled="disabled" />
 		</td></tr>
 		<tr><td>
 			Cel:<br />

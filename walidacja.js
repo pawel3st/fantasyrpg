@@ -22,15 +22,10 @@ function klasyPostaci(selObj) {
     
 }
 
+function blokuj() {
+    document.getElementById('zasieg_m').disabled=true;
+}
 function odblokuj() {
-   
-    document.getElementById(metry_radio).innerHTML();
-//    if((document.getElementById(metry_radio).checked) == true) {
-//        alert("UOJEZU!");
-//        //document.getElementById(metry_input).disabled = false;
-//    }
-//    else {
-//        alert("UOMATKO!");
-//        //document.getElementById(metry_input).disabled = true;
-//    }
+    document.getElementById('zasieg_m').disabled=false;
+    document.getElementById('zasieg_m').focus();
 }
