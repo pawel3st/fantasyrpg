@@ -25,6 +25,7 @@ function klasyPostaci(selObj) {
 function blokuj() {
     document.getElementById('zasieg_m').disabled=true;
 }
+
 function odblokuj() {
     document.getElementById('zasieg_m').disabled=false;
     document.getElementById('zasieg_m').focus();
