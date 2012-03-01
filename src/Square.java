@@ -8,7 +8,7 @@ public class Square extends JButton{
 	private Point coordinate;
 	private boolean occupied = false;
 	private ChessmanType cheesmanType = null;
-	
+
 	Square(Point coordinate, Color color) {
 		this.coordinate = coordinate;
 	}
@@ -32,9 +32,9 @@ public class Square extends JButton{
 	public void setOccupied(boolean occupied) {
 		this.occupied = occupied;
 	}
-	
 
-	
-	
-	
+
+
+
+
 }
