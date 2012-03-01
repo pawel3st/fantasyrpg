@@ -6,7 +6,7 @@ package chess;
 
 /**
  *
- * @author Pawel
+ * Kuba to chuj
  */
 public class Chess {
 
