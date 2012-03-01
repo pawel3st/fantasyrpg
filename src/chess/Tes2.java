@@ -6,7 +6,7 @@ package chess;
 
 /**
  *
- * @author Paweł
+ * @author  Paweł
  */
 public class Tes2 {
     

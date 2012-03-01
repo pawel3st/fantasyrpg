@@ -7,6 +7,6 @@
  *
  * @author  Paweł
  */
-public class Test {
+public class  Test {
     
 }
