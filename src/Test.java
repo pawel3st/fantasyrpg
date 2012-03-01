@@ -5,7 +5,7 @@
 
 /**
  *
- * @author Paweł
+ * @author  Paweł
  */
 public class Test {
     
