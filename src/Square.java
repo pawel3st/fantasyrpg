@@ -7,7 +7,7 @@ import javax.swing.JButton;
 public class Square extends JButton{
 	private Point coordinate;
 	private boolean occupied = false;
-	private CheesmanType cheesmanType = null;
+	private ChessmanType cheesmanType = null;
 	
 	Square(Point coordinate, Color color) {
 		this.coordinate = coordinate;
@@ -17,11 +17,11 @@ public class Square extends JButton{
 		return coordinate;
 	}
 
-	public CheesmanType getCheesmanType() {
+	public ChessmanType getCheesmanType() {
 		return cheesmanType;
 	}
 
-	public void setCheesmanType(CheesmanType cheesmanType) {
+	public void setCheesmanType(ChessmanType cheesmanType) {
 		this.cheesmanType = cheesmanType;
 	}
 
